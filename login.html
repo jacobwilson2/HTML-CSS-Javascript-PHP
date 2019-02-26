@@ -1,0 +1,149 @@
+<html>
+  <meta charset="utf-8">
+  <title>Login</title>
+
+  <style type='text/css' rel='stylesheet'>
+
+    .body {
+      position: fixed;
+      width: 100%;
+      top: -20px;
+      right: -40px;
+      background-image: url(https://images.pexels.com/photos/956981/milky-way-starry-sky-night-sky-star-956981.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)
+      background-size: cover;
+      -webkit-filter: blur(0px);
+    }
+
+    .head {
+      position: absolute;
+      top: calc(50% - 35px);
+      left: calc(50% - 255px);
+    }
+
+    .header div {
+      float: left;
+      color: white;
+      font-size: 40px;
+      font-weight: 200;
+    }
+
+    .header div span {
+
+    }
+
+    .login {
+      position: absolute;
+      top: calc(50% - 75px);
+      left: calc(50% - 50px);
+      height: 150px;
+      width: 350px;
+      padding: 10px;
+    }
+
+    .login input [type="text"] {
+      width: 250px;
+      height: 30px;
+      background: transparent;
+      border-radius: 2px;
+      font-size: 16px;
+      font-weight: 400;
+      padding: 4px;
+    }
+
+    .login input [type=password] {
+      width: 250px;
+      height: 30px;
+      background: transparent;
+      border-radius: 2px;
+      font-size: 16px;
+      font-weight: 400;
+      padding: 4px;
+    }
+    .login input [type=button] {
+      width: 260px;
+      height: 35px;
+      cursor: pointer;
+      border-radius: 2px;
+      font-size: 16px;
+      font-weight: 400;
+      padding: 6px;
+      margin-top: 10px;
+    }
+    .login input [type=button]:hover {
+      opacity: 0.8;
+    }
+
+    .login input [type=button]:active {
+      opacity: 0.6;
+    }
+
+    .login input [type=text]:focus {
+      outline: none;
+      border: 1px solid rgba(255,255,255,0.9);
+    }
+
+    .login input [type=password]:focus {
+      outline: none;
+      border: 1px solid rgba(255,255,255,0.9);
+    }
+
+    .login input [type=button]:focus {
+      outline: none;
+    }
+
+    ::-webkit-input-placeholder {
+
+    }
+
+    ::-moz-input-placeholder {
+
+    }
+
+  </style>
+  <head>
+    <body oncontextmenu="return false">
+      <div class='body'></div>
+        <div class="grad"></div>
+        <div class="header">
+          <div>Please<span>Subscribe</span></div>
+        </div>
+        <br>
+        <form name='login'>
+          <div class='login'>
+            <input type='text' placeholder='username' name='userid'><br>
+            <input type='password' placeholder='password' name='pswrd'><br>
+            <input type='button' onclick='check(this.form)' value='login'><br>
+          </div>
+        </form>
+
+        <script type="text/javascript">
+          function check(form) {
+            if (form.userid.value == 'jacobwilson' && form.pswrd.value == '123') {
+              window.open('http://youtube.com')
+            }
+            else {
+              alert("The username and password you entered don't match")
+            }
+          }
+        </script>
+
+    </body>
+  </head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
