@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>E-commerce Website</title>
+    <link rel="stylesheet" href="WUWhomestyle.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="top-nav-bar">
+    <div class="search-box" class="logo">
+      <i class="fa fa-bars" id="menu-button" onclick="openmenu()"></i>
+      <i class="fa fa-times" id="close-button" onclick="closemenu()"></i>
+      <a href="WUWhome.html"><img class="logo" src='WhatYouWantLogo1.png'></a>
+    </div>
+    <div class="menu-bar">
+      <ul>
+        <li><a href="#"><i class="fa fa-shopping-cart"></i>Shopping Cart</a></li>
+        <li><a href="#">Sign Up</a></li>
+        <li><a href="#"><i class="fa fa-user"></i>Log In</a></li>
+      </ul>
+    </div>
+    </div>
+
+    <section class="product">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5">
+            <div id="slide-show" class="carousel slide carousel-fade" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="d-block w-100" src="product1.jpg">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="product2.jpg">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="product3.jpg">
+                </div>
+                <a class="carousel-control-prev" href="#slide-show" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#slide-show" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-7">
+            <p class="new-item text-center">NEW</p>
+            <h2>Men's Classic Puma T Shirt - RED</h2>
+            <p>Product Code: IRS000000</p>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <p class="price">USD $14.99</p>
+            <p><b>Availability:</b> In Stock</p>
+            <p><b>Condition:</b> New</p>
+            <p><b>Brand:</b> WhatYouWant</p>
+            <label>Quantity:</label>
+            <input type="text" value="1">
+            <button type="button" class="btn-primary">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="product-description">
+      <div class="container">
+        <h6>Product Description</h6>
+        <p>クソ男ならこのシャツ。この悪い男の子を着たら
+          ちっちゃい人が自分のおっぱいをこすり落とす可能性は100％です
+          すべてのドンの毛皮。ドンにおっぱいがない場合
+          このシャツを着て30秒、私は個人的にあなたを返します
+          あなたのすぐそばにお金</p>
+      </div>
+      <hr>
+    </section>
+
+    <section class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <h1>Company</h1>
+            <p>About us</p>
+            <p>Contact</p>
+            <p>Careers</p>
+          </div>
+          <div class="col-md-3">
+            <h1>Follow us on</h1>
+            <p><i class="fa fa-twitter"></i>Twitter</p>
+            <p><i class="fa fa-instagram"></i>Instagram</p>
+            <p><i class="fa fa-facebook-f"></i>Facebook</p>
+          </div>
+        </div>
+      </div>
+    </section>

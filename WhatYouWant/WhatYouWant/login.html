@@ -1,0 +1,35 @@
+<html>
+  <meta charset="utf-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="login_style.css">
+
+  <head>
+    <body oncontextmenu="return false">
+      <div class='body'></div>
+        <div class="grad"></div>
+        <div class="header">
+          <div>Please<span>Subscribe</span></div>
+        </div>
+        <br>
+        <form name='login'>
+          <div class='login'>
+            <input type='text' placeholder='username' name='userid'><br>
+            <input type='password' placeholder='password' name='pswrd'><br>
+            <input type='button' onclick='check(this.form)' value='login'><br>
+          </div>
+        </form>
+
+        <script type="text/javascript">
+          function check(form) {
+            if (form.userid.value == 'jacobwilson' && form.pswrd.value == '123') {
+              window.open('http://youtube.com')
+            }
+            else {
+              alert("The username and password you entered don't match")
+            }
+          }
+        </script>
+
+    </body>
+  </head>
+</html>
